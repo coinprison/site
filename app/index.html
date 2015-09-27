@@ -25,7 +25,7 @@
 
         <table
             ng-controller="EventsController as eventsController"
-            class="table table-bordered below48">
+            class="table table-bordered phone-table below48">
             <thead>
                 <th>Date</th>
                 <th>Names</th>
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="event in eventsController.events">
-                    <td>
+                    <td class="mw96">
                         <div>{{ event.date }}</div>
                     </td>
                     <td>
@@ -54,10 +54,14 @@
                     <td>
                         <div ng-show="event.charge1">{{ event.charge1 }}</div>
                     </td>
-                    <td>
-                        <div ng-show="event.status">{{ event.status }}</div>
+                    <td class="phone-inline-block">
+                        <div
+                            class="fwb"
+                            ng-show="event.status">
+                            {{ event.status }}
+                        </div>
                     </td>
-                    <td>
+                    <td class="phone-inline-block">
                         <span ng-repeat="link in [event.link1, event.link2, event.link3, event.link3] track by $index">
                             <a
                                 target="_blank"

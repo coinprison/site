@@ -20,3 +20,26 @@ body {
 .fwb {
     font-weight: bold;
 }
+
+.mw96 {
+    min-width: 96px;
+}
+
+@media only screen and (max-width: 40em) {
+    table.phone-table {
+        display: table;
+        border: 0px;
+        border-collapse: separate;
+        border-spacing: 0em 3em;
+
+        thead { display: none; }
+
+        td {
+            display: block;
+        }
+
+        td.phone-inline-block {
+            display: inline-block;
+        }
+    }
+}
