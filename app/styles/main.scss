@@ -21,9 +21,10 @@ body {
     font-weight: bold;
 }
 
-.mw96 {
-    min-width: 96px;
-}
+.minw96 { min-width: 96px; }
+.maxw114 { max-width: 114px; }
+.maxw240 { max-width: 240px; }
+.maxw300 { max-width: 300px; }
 
 @media only screen and (max-width: 40em) {
     table.phone-table {

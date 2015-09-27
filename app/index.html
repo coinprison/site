@@ -36,7 +36,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="event in eventsController.events">
-                    <td class="mw96">
+                    <td class="minw96">
                         <div>{{ event.date }}</div>
                     </td>
                     <td>
@@ -46,12 +46,12 @@
                         <div ng-show="event.alias4">{{ event.alias4 }}</div>
                         <div ng-show="event.alias5">{{ event.alias5 }}</div>
                     </td>
-                    <td>
+                    <td class="maxw114">
                         <div ng-show="event.agency1">{{ event.agency1 }}</div>
                         <div ng-show="event.agency2">{{ event.agency2 }}</div>
                         <div ng-show="event.agency3">{{ event.agency3 }}</div>
                     </td>
-                    <td>
+                    <td class="maxw300">
                         <div ng-show="event.charge1">{{ event.charge1 }}</div>
                     </td>
                     <td class="phone-inline-block">
